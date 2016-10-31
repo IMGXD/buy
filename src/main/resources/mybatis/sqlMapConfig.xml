@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration  
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 全局setting配置 ，根据需要添加-->
+	<!--<settings>
+		&lt;!&ndash; 开启mybatis缓存设置,一般都是true &ndash;&gt;
+		<setting name="cacheEnabled" value="true"/>
+
+		&lt;!&ndash;延迟加载的全局开关&ndash;&gt;
+		<setting name="lazyLoadingEnabled" value="false"/>
+
+		&lt;!&ndash;设置超时时间&ndash;&gt;
+		<setting name="defaultStatementTimeout" value="3000"/>
+
+
+		&lt;!&ndash;本地缓存机制&ndash;&gt;
+		<setting name="localCacheScope" value="STATEMENT"/>
+
+		<setting name="defaultExecutorType" value="SIMPLE"/>
+
+
+
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+
+		&lt;!&ndash;允许JDBC支持自动生成主键,需要驱动的兼容&ndash;&gt;
+		<setting name="useGeneratedKeys" value="true"/>
+	</settings>-->
+
+	<!-- 配置别名 -->
+	<!--<typeAliases>
+		&lt;!&ndash; 批量扫描别名 &ndash;&gt;
+		<package name="com.snrtqi.buy.pojo"/>
+	</typeAliases>-->
+
+	<!-- 配置mapper 
+	由于使用spring和mybatis的整合包进行mapper扫描，这里不需要配置
+	必须遵循：mapper.xml和mapper.java文件同名且在一个目录
+	-->
+
+</configuration>
