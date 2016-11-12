@@ -38,7 +38,7 @@
         </javaTypeResolver>
 
         <!--要生成的 pojo 模块位置-->
-        <javaModelGenerator targetPackage="com.generator.pojo" targetProject="src\main\java">
+        <javaModelGenerator targetPackage="com.snrtqi.buy.pojo" targetProject="src\main\java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
@@ -46,13 +46,13 @@
         </javaModelGenerator>
 
         <!--要生成的 Mapper.xml 文件位置-->
-        <sqlMapGenerator targetPackage="com.generator.mapper" targetProject="src\main\java">
+        <sqlMapGenerator targetPackage="com.snrtqi.buy.mapper" targetProject="src\main\java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
         <!--要生成的 Mapper 接口类-->
-        <javaClientGenerator targetPackage="com.generator.mapper"
+        <javaClientGenerator targetPackage="com.snrtqi.buy.mapper"
                              targetProject="src\main\java"
                              type="XMLMAPPER">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->

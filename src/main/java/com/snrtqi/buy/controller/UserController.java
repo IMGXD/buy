@@ -1,9 +1,13 @@
 package com.snrtqi.buy.controller;
 
+import com.snrtqi.buy.pojo.User;
+import com.snrtqi.buy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 /**
  * Created by Gumo on 2016/9/19.
@@ -26,9 +30,9 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView();
 
         //调用service方法得到用户列表
-        //List<User> users = userService.findUser();
+        List<User> users = userService.findUser();
         //将得到的用户列表内容添加到ModelAndView中
-        //modelAndView.addObject("users",users);
+        modelAndView.addObject("users",users);
         //设置响应的jsp视图
         modelAndView.setViewName("user/findUser");
 

@@ -1,7 +1,7 @@
 package com.snrtqi.buy.mapper;
 
-import com.generator.pojo.Book;
-import com.generator.pojo.BookExample;
+import com.snrtqi.buy.pojo.Book;
+import com.snrtqi.buy.pojo.BookExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

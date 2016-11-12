@@ -1,7 +1,7 @@
 package com.snrtqi.buy.mapper;
 
-import com.generator.pojo.User;
-import com.generator.pojo.UserExample;
+import com.snrtqi.buy.pojo.User;
+import com.snrtqi.buy.pojo.UserExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

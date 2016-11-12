@@ -1,7 +1,7 @@
 package com.snrtqi.buy.mapper;
 
-import com.generator.pojo.Orderitem;
-import com.generator.pojo.OrderitemExample;
+import com.snrtqi.buy.pojo.Orderitem;
+import com.snrtqi.buy.pojo.OrderitemExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
