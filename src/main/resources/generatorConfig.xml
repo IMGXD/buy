@@ -27,7 +27,7 @@
 
         <!--添加你的 JDBC 连接信息-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/buy"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/bookstore"
                         userId="root"
                         password="root"/>
 
@@ -64,7 +64,7 @@
         <!--用百分号表示生成所有表,可以直接省去一个一个写 <table tableName="%" /> -->
         <!--<table tableName="user" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>-->
-        <table tableName="user" />
+        <table tableName="%" />
 
         <!-- 有些表的字段需要指定java类型
          <table schema="" tableName="">

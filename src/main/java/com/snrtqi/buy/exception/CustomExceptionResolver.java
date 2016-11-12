@@ -19,7 +19,6 @@ public class CustomExceptionResolver implements HandlerExceptionResolver {
 	 * @param ex
 	 *            系统抛出的异常
 	 */
-	@Override
 	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler,
 			Exception ex) {
 		// handler就是处理器适配器要执行的Handler对象（只有method）
