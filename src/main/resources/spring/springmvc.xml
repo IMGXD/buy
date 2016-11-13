@@ -17,7 +17,7 @@
     <!-- 静态资源解析
     包括：js、css、img、...
     -->
-    <!--<mvc:resources location="/statics/js/" mapping="/js/**"/>-->
+    <!--<mvc:resources location="/statics/" mapping="/statics/**"/>-->
 
     <!-- 注释映射器 -->
     <!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/> -->
