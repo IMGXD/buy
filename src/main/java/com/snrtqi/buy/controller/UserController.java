@@ -1,5 +1,6 @@
 package com.snrtqi.buy.controller;
 
+import com.snrtqi.buy.pojo.ShoppingCarCustom;
 import com.snrtqi.buy.pojo.UserCustom;
 import com.snrtqi.buy.pojo.UserQueryVo;
 import com.snrtqi.buy.service.UserService;
@@ -15,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 用户管理Controller
  * Created by Gumo on 2016/9/19.
  */
 @Controller
@@ -173,6 +175,11 @@ public class UserController {
 
         //  将user放入session
         session.setAttribute("session_user", userCustom);
+
+        /*
+            给用户添加购物车，session中
+         */
+        session.setAttribute("shoppingCar", new ShoppingCarCustom());
 
         /*
             成功，转到主页
