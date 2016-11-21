@@ -92,7 +92,7 @@ public class UserController {
         if (errors.size() > 0) {
             model.addAttribute("errors", errors);
             model.addAttribute("user", userQueryVo.getUserCustom());
-            return "forward:regist";
+            return "user/regist";
         }
 
         /*
@@ -157,11 +157,11 @@ public class UserController {
         if (errors.size() > 0) {
             model.addAttribute("errors", errors);
             model.addAttribute("user", userQueryVo.getUserCustom());
-            return "forward:login";
+            return "user/login";
         }
 
         /*
-            调用service的regist方法
+            调用service的login方法
          */
         UserCustom userCustom = userService.login(username, userQueryVo);
 
@@ -179,12 +179,13 @@ public class UserController {
         /*
             给用户添加购物车，session中
          */
-        session.setAttribute("shoppingCar", new ShoppingCarCustom());
+        ShoppingCarCustom shoppingCarCustom = new ShoppingCarCustom();
+        session.setAttribute("shoppingCar", shoppingCarCustom);
 
         /*
             成功，转到主页
          */
-        return "redirect:/home/toHome";
+        return "redirect:/home/main";
     }
 
     /**
@@ -198,6 +199,6 @@ public class UserController {
         if (session.getAttribute("session_user") != null) {
             session.invalidate();
         }
-        return "redirect:/home/toHome";
+        return "redirect:/home/main";
     }
 }

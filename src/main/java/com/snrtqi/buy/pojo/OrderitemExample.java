@@ -1,5 +1,6 @@
 package com.snrtqi.buy.pojo;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -334,52 +335,52 @@ public class OrderitemExample {
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalEqualTo(Long value) {
+        public Criteria andSubtotalEqualTo(BigDecimal value) {
             addCriterion("subtotal =", value, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalNotEqualTo(Long value) {
+        public Criteria andSubtotalNotEqualTo(BigDecimal value) {
             addCriterion("subtotal <>", value, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalGreaterThan(Long value) {
+        public Criteria andSubtotalGreaterThan(BigDecimal value) {
             addCriterion("subtotal >", value, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalGreaterThanOrEqualTo(Long value) {
+        public Criteria andSubtotalGreaterThanOrEqualTo(BigDecimal value) {
             addCriterion("subtotal >=", value, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalLessThan(Long value) {
+        public Criteria andSubtotalLessThan(BigDecimal value) {
             addCriterion("subtotal <", value, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalLessThanOrEqualTo(Long value) {
+        public Criteria andSubtotalLessThanOrEqualTo(BigDecimal value) {
             addCriterion("subtotal <=", value, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalIn(List<Long> values) {
+        public Criteria andSubtotalIn(List<BigDecimal> values) {
             addCriterion("subtotal in", values, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalNotIn(List<Long> values) {
+        public Criteria andSubtotalNotIn(List<BigDecimal> values) {
             addCriterion("subtotal not in", values, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalBetween(Long value1, Long value2) {
+        public Criteria andSubtotalBetween(BigDecimal value1, BigDecimal value2) {
             addCriterion("subtotal between", value1, value2, "subtotal");
             return (Criteria) this;
         }
 
-        public Criteria andSubtotalNotBetween(Long value1, Long value2) {
+        public Criteria andSubtotalNotBetween(BigDecimal value1, BigDecimal value2) {
             addCriterion("subtotal not between", value1, value2, "subtotal");
             return (Criteria) this;
         }

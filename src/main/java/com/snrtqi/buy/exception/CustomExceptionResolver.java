@@ -23,6 +23,9 @@ public class CustomExceptionResolver implements HandlerExceptionResolver {
         CustomException customException = null;
         RegistException registException = null;
         LoginException loginException = null;
+        AddCategoryException addCategoryException = null;
+        UpdateCategoryException updateCategoryException = null;
+        DeleteCategoryException deleteCategoryException = null;
         if (ex instanceof RegistException) {
             registException = ((RegistException) ex);
             // 错误信息
@@ -45,6 +48,42 @@ public class CustomExceptionResolver implements HandlerExceptionResolver {
 
             // 指向到错误页面
             modelAndView.setViewName("user/login");
+
+            return modelAndView;
+        } else if (ex instanceof AddCategoryException) {
+            addCategoryException = ((AddCategoryException) ex);
+            // 错误信息
+            String message = addCategoryException.getMessage();
+
+            // 将错误信息传到页面
+            modelAndView.addObject("message", message);
+
+            // 指向到错误页面
+            modelAndView.setViewName("adminjsps/admin/category/add");
+
+            return modelAndView;
+        } else if (ex instanceof DeleteCategoryException) {
+            deleteCategoryException = ((DeleteCategoryException) ex);
+            // 错误信息
+            String message = deleteCategoryException.getMessage();
+
+            // 将错误信息传到页面
+            modelAndView.addObject("message", message);
+
+            // 指向到错误页面
+            modelAndView.setViewName("adminjsps/admin/category/list");
+
+            return modelAndView;
+        } else if (ex instanceof UpdateCategoryException) {
+            updateCategoryException = ((UpdateCategoryException) ex);
+            // 错误信息
+            String message = updateCategoryException.getMessage();
+
+            // 将错误信息传到页面
+            modelAndView.addObject("message", message);
+
+            // 指向到错误页面
+            modelAndView.setViewName("adminjsps/admin/category/edit");
 
             return modelAndView;
         } else {

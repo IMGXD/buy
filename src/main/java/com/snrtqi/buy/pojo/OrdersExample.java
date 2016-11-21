@@ -1,5 +1,6 @@
 package com.snrtqi.buy.pojo;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -335,52 +336,52 @@ public class OrdersExample {
             return (Criteria) this;
         }
 
-        public Criteria andTotalEqualTo(Long value) {
+        public Criteria andTotalEqualTo(BigDecimal value) {
             addCriterion("total =", value, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalNotEqualTo(Long value) {
+        public Criteria andTotalNotEqualTo(BigDecimal value) {
             addCriterion("total <>", value, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalGreaterThan(Long value) {
+        public Criteria andTotalGreaterThan(BigDecimal value) {
             addCriterion("total >", value, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalGreaterThanOrEqualTo(Long value) {
+        public Criteria andTotalGreaterThanOrEqualTo(BigDecimal value) {
             addCriterion("total >=", value, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalLessThan(Long value) {
+        public Criteria andTotalLessThan(BigDecimal value) {
             addCriterion("total <", value, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalLessThanOrEqualTo(Long value) {
+        public Criteria andTotalLessThanOrEqualTo(BigDecimal value) {
             addCriterion("total <=", value, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalIn(List<Long> values) {
+        public Criteria andTotalIn(List<BigDecimal> values) {
             addCriterion("total in", values, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalNotIn(List<Long> values) {
+        public Criteria andTotalNotIn(List<BigDecimal> values) {
             addCriterion("total not in", values, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalBetween(Long value1, Long value2) {
+        public Criteria andTotalBetween(BigDecimal value1, BigDecimal value2) {
             addCriterion("total between", value1, value2, "total");
             return (Criteria) this;
         }
 
-        public Criteria andTotalNotBetween(Long value1, Long value2) {
+        public Criteria andTotalNotBetween(BigDecimal value1, BigDecimal value2) {
             addCriterion("total not between", value1, value2, "total");
             return (Criteria) this;
         }

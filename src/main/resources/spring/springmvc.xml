@@ -10,12 +10,13 @@
 		http://www.springframework.org/schema/context 
 		http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-    <!--自动扫描控制器-->
+    <!-- 自动扫描控制器 -->
     <context:component-scan base-package="com.snrtqi.buy.controller"/>
 
-    <!-- 静态资源解析-->
+    <!-- 静态资源解析 -->
     <mvc:resources location="/book_img/" mapping="/book_img/**"/>
     <mvc:resources location="/images/" mapping="/images/**"/>
+    <mvc:resources location="/menu/" mapping="/menu/**"/>
 
 
     <!-- 注解的控制器映射器和控制器适配器 -->
@@ -23,8 +24,7 @@
     <!--conversion-service="conversionService"-->
     <!--validator="validator"-->
 
-    <!--视图渲染-->
-    <!-- 视图解析器 解析jsp视图，默认使用jstl标签，classpath下得有jstl的包 -->
+    <!-- 视图渲染 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- 配置jsp路径的前缀 -->
         <property name="prefix" value="/WEB-INF/views/"></property>
@@ -67,7 +67,7 @@
     <!--<property name="cacheSeconds" value="120" />-->
     <!--</bean>-->
 
-    <!-- 全局异常处理器 只要实现HandlerExceptionResolver接口就是全局异常处理器 -->
+    <!-- 全局异常处理器 -->
     <bean class="com.snrtqi.buy.exception.CustomExceptionResolver"></bean>
 
     <!-- 文件上传 -->

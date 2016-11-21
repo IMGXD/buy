@@ -13,6 +13,12 @@
     <!-- 图书管理的service -->
     <bean id="bookService" class="com.snrtqi.buy.service.impl.BookServiceImpl" />
 
+	<!-- 订单管理的service -->
+	<bean id="ordersService" class="com.snrtqi.buy.service.impl.OrdersServiceImpl" />
+
+	<!-- 管理员管理的service -->
+	<bean id="adminService" class="com.snrtqi.buy.service.impl.AdminServiceImpl" />
+
 	<!--扫描service-->
 	<!--<context:component-scan base-package="com.elin4it.ssm.service"/>-->
 

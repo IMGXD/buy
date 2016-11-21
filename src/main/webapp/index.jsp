@@ -1,4 +1,4 @@
 <%@ page language="java" pageEncoding="utf-8"%>
 <%
-	response.sendRedirect("/home/toHome");
+	response.sendRedirect("/home/main");
 %>
