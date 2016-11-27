@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.snrtqi.buy.mapper.CategoryMapperCustom">
+
+    <select id="findCategoryList" resultType="com.snrtqi.buy.pojo.CategoryCustom">
+      SELECT * FROM category
+    </select>
+
+    <select id="findCategoyByCname" parameterType="java.lang.String" resultType="com.snrtqi.buy.pojo.CategoryCustom">
+        SELECT * FROM category WHERE cname LIKE #{cname}
+    </select>
+</mapper>

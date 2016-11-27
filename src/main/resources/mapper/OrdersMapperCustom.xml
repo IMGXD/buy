@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.snrtqi.buy.mapper.OrdersMapperCustom">
+
+    <resultMap id="OrdersAndOrderitemResultMap" type="com.snrtqi.buy.pojo.OrdersCustom">
+        <!--订单信息-->
+        <id column="oid" property="oid"/>
+        <result column="ordertime" property="ordertime"/>
+        <result column="total" property="total"/>
+        <result column="state" property="state"/>
+        <result column="uid" property="uid"/>
+        <result column="address" property="address"/>
+
+        <!--订单明细信息-->
+        <collection property="orderitemCustomList" ofType="com.snrtqi.buy.pojo.OrderitemCustom">
+            <id column="orderitem_id" property="iid"/>
+            <result column="count" property="count"/>
+            <result column="subtotal" property="subtotal"/>
+            <result column="orders_id" property="oid"/>
+            <result column="book_id" property="bid"/>
+
+            <!--图书信息-->
+            <association property="bookCustom" javaType="com.snrtqi.buy.pojo.BookCustom">
+                <id column="bid" property="bid"/>
+                <result column="bname" property="bname"/>
+                <result column="price" property="price"/>
+                <result column="author" property="author"/>
+                <result column="image" property="image"/>
+                <result column="cid" property="cid"/>
+            </association>
+        </collection>
+    </resultMap>
+
+    <select id="findOrdersById" parameterType="java.lang.String" resultMap="OrdersAndOrderitemResultMap">
+        SELECT
+          orders.*,
+          orderitem.`iid` orderitem_id,
+          orderitem.`count`,
+          orderitem.`subtotal`,
+          orderitem.`oid` orders_id,
+          orderitem.`bid` book_id,
+          book.*
+        FROM
+          orders,
+          orderitem,
+          book
+        WHERE
+          orders.oid = orderitem.oid AND orderitem.bid = book.bid AND orders.uid LIKE #{uid}
+    </select>
+</mapper>

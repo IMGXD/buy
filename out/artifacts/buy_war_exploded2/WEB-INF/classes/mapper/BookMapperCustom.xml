@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.snrtqi.buy.mapper.BookMapperCustom">
+
+    <!-- sql片段 -->
+    <sql id="query_book_where">
+        <if test="bookCustom != null">
+            <if test="bookCustom.bname != null and bookCustom.bname != ''">
+                bname LIKE '%${bookCustom.bname}%'
+            </if>
+            <if test="bookCustom.cid != null and bookCustom.cid != ''">
+                cid LIKE '%${bookCustom.cid}%'
+            </if>
+        </if>
+    </sql>
+
+    <select id="findBookList" parameterType="com.snrtqi.buy.pojo.BookQueryVo"
+            resultType="com.snrtqi.buy.pojo.BookCustom">
+        SELECT * FROM book
+        <where>
+            <include refid="query_book_where"></include>
+        </where>
+    </select>
+
+    <select id="getCountByCid" parameterType="java.lang.String"
+            resultType="java.lang.Integer">
+        SELECT count(*) FROM book WHERE cid = #{cid}
+    </select>
+
+    <select id="findBookByBname" parameterType="java.lang.String" resultType="com.snrtqi.buy.pojo.BookCustom">
+        SELECT * FROM book WHERE bname LIKE #{bname}
+    </select>
+</mapper>
