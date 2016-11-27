@@ -101,4 +101,18 @@ public class AdminController {
         return "redirect:/home/adminIndex";
     }
 
+    /**
+     * 注销功能
+     *
+     * @param session
+     * @return
+     */
+    @RequestMapping("/logout")
+    public String logout(HttpSession session) {
+        if (session.getAttribute("session_admin") != null) {
+            session.invalidate();
+        }
+        return "redirect:login";
+    }
+
 }
