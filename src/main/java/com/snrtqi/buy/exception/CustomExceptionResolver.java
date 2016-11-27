@@ -26,6 +26,8 @@ public class CustomExceptionResolver implements HandlerExceptionResolver {
         AddCategoryException addCategoryException = null;
         UpdateCategoryException updateCategoryException = null;
         DeleteCategoryException deleteCategoryException = null;
+        AdminLoginException adminLoginException = null;
+        AddBookException addBookException = null;
         if (ex instanceof RegistException) {
             registException = ((RegistException) ex);
             // 错误信息
@@ -84,6 +86,30 @@ public class CustomExceptionResolver implements HandlerExceptionResolver {
 
             // 指向到错误页面
             modelAndView.setViewName("adminjsps/admin/category/edit");
+
+            return modelAndView;
+        } else if (ex instanceof AdminLoginException) {
+            adminLoginException = ((AdminLoginException) ex);
+            // 错误信息
+            String message = adminLoginException.getMessage();
+
+            // 将错误信息传到页面
+            modelAndView.addObject("message", message);
+
+            // 指向到错误页面
+            modelAndView.setViewName("adminjsps/login");
+
+            return modelAndView;
+        } else if (ex instanceof AddBookException) {
+            addBookException = ((AddBookException) ex);
+            // 错误信息
+            String message = addBookException.getMessage();
+
+            // 将错误信息传到页面
+            modelAndView.addObject("message", message);
+
+            // 指向到错误页面
+            modelAndView.setViewName("adminjsps/book/add");
 
             return modelAndView;
         } else {

@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
     public void regist(String username, String email, UserQueryVo userQueryVo) throws Exception {
         //  校验用户名
         UserCustom findUser = userMapperCustom.findUserByUsername(username);
-        if (findUser != null) {
+            if (findUser != null) {
             throw new RegistException("用户名已被注册！");
         }
 
@@ -58,9 +58,10 @@ public class UserServiceImpl implements UserService {
      * @throws Exception
      */
     public UserCustom login(String username, UserQueryVo userQueryVo) throws Exception {
+        System.out.println("login before");
         //  得到User
         UserCustom userCustom = userMapperCustom.findUserByUsername(username);
-
+        System.out.println("login after");
         //  判断User是否为null
         if (userCustom == null) {
             throw new LoginException("用户名不存在！");

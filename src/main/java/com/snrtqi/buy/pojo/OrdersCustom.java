@@ -9,13 +9,13 @@ import java.util.List;
 public class OrdersCustom extends Orders {
 
     // 订单条目
-    private List<Orderitem> orderitemList;
+    private List<OrderitemCustom> orderitemCustomList;
 
-    public List<Orderitem> getOrderitemList() {
-        return orderitemList;
+    public List<OrderitemCustom> getOrderitemCustomList() {
+        return orderitemCustomList;
     }
 
-    public void setOrderitemList(List<Orderitem> orderitemList) {
-        this.orderitemList = orderitemList;
+    public void setOrderitemCustomList(List<OrderitemCustom> orderitemCustomList) {
+        this.orderitemCustomList = orderitemCustomList;
     }
 }

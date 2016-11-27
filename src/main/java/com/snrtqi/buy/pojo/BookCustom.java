@@ -5,4 +5,6 @@ package com.snrtqi.buy.pojo;
  * Created by Gumo on 2016/11/12.
  */
 public class BookCustom extends Book{
+
+
 }

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
@@ -35,6 +36,7 @@ public class UserController {
      */
     @RequestMapping("/regist")
     public String regist() throws Exception {
+        System.out.println("regist");
         return "user/regist";
     }
 
@@ -49,10 +51,11 @@ public class UserController {
      * @throws Exception
      */
     @RequestMapping("/registSubmit")
-    public String registSubmit(@ModelAttribute("userCustom.username") String username,
-                               @ModelAttribute("userCustom.email") String email,
+    public String registSubmit(@RequestParam("userCustom.username") String username,
+                               @RequestParam("userCustom.email") String email,
                                UserQueryVo userQueryVo,
                                Model model) throws Exception {
+        System.out.println("registSubmit");
         /*
             封装数据
          */

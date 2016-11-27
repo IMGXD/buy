@@ -22,4 +22,5 @@ public interface UserService {
      * @throws Exception
      */
     UserCustom login(String username, UserQueryVo userQueryVo) throws Exception;
+
 }

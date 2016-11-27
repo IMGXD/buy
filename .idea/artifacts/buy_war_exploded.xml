@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="buy:war exploded">
+  <artifact type="exploded-war" build-on-make="true" name="buy:war exploded">
     <output-path>$PROJECT_DIR$/target/buy</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
@@ -31,6 +31,8 @@
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.2.3" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">
