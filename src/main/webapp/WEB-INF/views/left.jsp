@@ -37,7 +37,7 @@
         function queryBook() {
             var type = document.getElementById("booktype").value;
             var typevalue = document.getElementById("typevalue").value;
-            document.bookForm.action = "/book/findBookList?" + type + "=" + typevalue;
+            document.bookForm.action = "/book/findBooksByBnameOrAuthor?" + type + "=" + typevalue;
             document.bookForm.submit();
         }
     </script>
@@ -60,7 +60,7 @@
 </div>
 <c:forEach items="${categoryList}" var="category">
     <div>
-        <a href="<c:url value='/book/findBookList?bookCustom.cid=${category.cid}'/>">${category.cname}</a>
+        <a href="<c:url value='/book/findBookListByCid?cid=${category.cid}'/>">${category.cname}</a>
     </div>
 </c:forEach>
 </body>

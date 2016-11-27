@@ -116,7 +116,7 @@ public class AdminBookController {
         //  上传图片
         if (book_pic != null && originalFilename != null && originalFilename.length() > 0) {
             //  存储图片的路径
-            String savePath = "F:\\develop\\upload\\temp\\";
+            String savePath = "F:\\develop\\upload\\book_img\\";
 
             //  新的图片名称
             String newFileName = CommonUtils.uuid() + originalFilename.substring(originalFilename.lastIndexOf("."));
@@ -135,7 +135,41 @@ public class AdminBookController {
         //  设置bid
         bookQueryVo.getBookCustom().setBid(CommonUtils.uuid());
 
+        //  设置是否删除标记
+        bookQueryVo.getBookCustom().setDel(false);
+
         bookService.addBook(bname, bookQueryVo);
+
+        //  返回modelAndView
+        return "redirect:findBookList";
+    }
+
+    /**
+     * 删除图书
+     *
+     * @param bid
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/delete")
+    public String delete(String bid) throws Exception {
+        //  调用service方法删除图书
+        bookService.delete(bid);
+
+        return "redirect:findBookList";
+    }
+
+    /**
+     * 编辑图书
+     *
+     * @param bookCustom
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/edit")
+    public String edit(BookCustom bookCustom) throws Exception {
+        //  调用service方法加载图书
+        bookService.updateBook(bookCustom);
 
         //  返回modelAndView
         return "redirect:findBookList";

@@ -3,16 +3,22 @@
 <mapper namespace="com.snrtqi.buy.mapper.BookMapperCustom">
 
     <!-- sql片段 -->
-    <sql id="query_book_where">
+    <sql id="Query_Book_Where">
+        <if test="1 != 2">
+            AND del = 0
+        </if>
         <if test="bookCustom != null">
+            <if test="1 != 2">
+                AND del = 0
+            </if>
             <if test="bookCustom.bname != null and bookCustom.bname != ''">
-                bname LIKE '%${bookCustom.bname}%'
+                bname LIKE CONCAT('%',#{bookCustom.bname},'%')
             </if>
             <if test="bookCustom.cid != null and bookCustom.cid != ''">
-                cid LIKE '%${bookCustom.cid}%'
+                cid = #{bookCustom.cid}
             </if>
             <if test="bookCustom.author != null and bookCustom.author != ''">
-                author LIKE '%${bookCustom.author}%'
+                author LIKE CONCAT('%',#{bname},'%')
             </if>
         </if>
     </sql>
@@ -21,16 +27,33 @@
             resultType="com.snrtqi.buy.pojo.BookCustom">
         SELECT * FROM book
         <where>
-            <include refid="query_book_where"></include>
+            <include refid="Query_Book_Where"></include>
         </where>
+    </select>
+
+    <select id="findBookListByCid" parameterType="java.lang.String"
+            resultType="com.snrtqi.buy.pojo.BookCustom">
+        SELECT * FROM book WHERE del = 0 AND cid = #{cid}
     </select>
 
     <select id="getCountByCid" parameterType="java.lang.String"
             resultType="java.lang.Integer">
-        SELECT count(*) FROM book WHERE cid = #{cid}
+        SELECT count(*) FROM book WHERE cid = #{cid} AND del = 0
     </select>
 
     <select id="findBookByBname" parameterType="java.lang.String" resultType="com.snrtqi.buy.pojo.BookCustom">
-        SELECT * FROM book WHERE bname LIKE #{bname}
+        SELECT * FROM book WHERE bname LIKE #{bname} AND del = 0
     </select>
+
+    <select id="findBooksByBname" parameterType="java.lang.String" resultType="com.snrtqi.buy.pojo.BookCustom">
+        SELECT * FROM book WHERE bname LIKE CONCAT('%',#{bname},'%') AND del = 0
+    </select>
+
+    <select id="findBooksByAuthor" parameterType="java.lang.String" resultType="com.snrtqi.buy.pojo.BookCustom">
+        SELECT * FROM book WHERE author LIKE CONCAT('%',#{author},'%') AND del = 0
+    </select>
+
+    <update id="delete" parameterType="java.lang.String">
+        UPDATE book SET del = TRUE WHERE bid LIKE #{bid}
+    </update>
 </mapper>

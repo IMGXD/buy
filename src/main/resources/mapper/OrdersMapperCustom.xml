@@ -2,6 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.snrtqi.buy.mapper.OrdersMapperCustom">
 
+    <!--<sql id="Query_Orders_Where">-->
+    <!--orders.oid = orderitem.oid AND orderitem.bid = book.bid-->
+    <!--<if test="ordersCustom != null">-->
+    <!--<if test="ordersCustom.state != null and ordersCustom.state != ''">-->
+    <!--orders.state = #{ordersCustom.state}-->
+    <!--</if>-->
+    <!--</if>-->
+    <!--</sql>-->
+
     <resultMap id="OrdersAndOrderitemResultMap" type="com.snrtqi.buy.pojo.OrdersCustom">
         <!--订单信息-->
         <id column="oid" property="oid"/>
@@ -45,6 +54,65 @@
           orderitem,
           book
         WHERE
-          orders.oid = orderitem.oid AND orderitem.bid = book.bid AND orders.uid LIKE #{uid}
+          orders.oid = orderitem.oid AND orderitem.bid = book.bid AND orders.uid = #{uid}
     </select>
+
+    <select id="loadOrder" parameterType="java.lang.String" resultMap="OrdersAndOrderitemResultMap">
+        SELECT
+            orders.*,
+            orderitem.`iid` orderitem_id,
+            orderitem.`count`,
+            orderitem.`subtotal`,
+            orderitem.`oid` orders_id,
+            orderitem.`bid` book_id,
+            book.*
+        FROM
+            orders,
+            orderitem,
+            book
+        WHERE
+            orders.oid = orderitem.oid AND orderitem.bid = book.bid AND orders.oid = #{oid}
+    </select>
+
+    <select id="findOrderList" resultMap="OrdersAndOrderitemResultMap">
+        SELECT
+        orders.*,
+        orderitem.`iid` orderitem_id,
+        orderitem.`count`,
+        orderitem.`subtotal`,
+        orderitem.`oid` orders_id,
+        orderitem.`bid` book_id,
+        book.*
+        FROM
+        orders,
+        orderitem,
+        book
+        WHERE
+        orders.oid = orderitem.oid AND orderitem.bid = book.bid
+    </select>
+
+    <select id="findOrderListByState" parameterType="java.lang.String" resultMap="OrdersAndOrderitemResultMap">
+        SELECT
+        orders.*,
+        orderitem.`iid` orderitem_id,
+        orderitem.`count`,
+        orderitem.`subtotal`,
+        orderitem.`oid` orders_id,
+        orderitem.`bid` book_id,
+        book.*
+        FROM
+        orders,
+        orderitem,
+        book
+        WHERE
+        orders.oid = orderitem.oid AND orderitem.bid = book.bid AND orders.state = #{state}
+    </select>
+
+    <select id="getStateByOid" parameterType="java.lang.String" resultType="java.lang.Integer">
+        SELECT state FROM orders WHERE oid = #{oid}
+    </select>
+
+    <update id="updateState">
+        UPDATE orders SET state = ${state} WHERE oid = #{oid}
+    </update>
 </mapper>

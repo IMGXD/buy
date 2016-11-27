@@ -7,6 +7,6 @@
 <title>成功提示</title>
 </head>
 <body>
-操作成功！
+${message }
 </body>
 </html>

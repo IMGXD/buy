@@ -36,4 +36,37 @@ public interface BookService {
      * @throws Exception
      */
     void addBook(String bname, BookQueryVo bookQueryVo) throws Exception;
+
+    /**
+     * 根据分类查询图书列表
+     *
+     * @param cid
+     * @return
+     * @throws Exception
+     */
+    List<BookCustom> findBookListByCid(String cid) throws Exception;
+
+    /**
+     * 通过图书名称或作者名称模糊查找图书
+     *
+     * @param bname
+     * @return
+     * @throws Exception
+     */
+    List<BookCustom> findBooksByBnameOrAuthor(String bname, String author) throws Exception;
+
+    /**
+     * 删除图书
+     *
+     * @param bid
+     * @throws Exception
+     */
+    void delete(String bid) throws Exception;
+
+    /**
+     * 更新图书信息
+     *
+     * @param bookCustom
+     */
+    void updateBook(BookCustom bookCustom);
 }

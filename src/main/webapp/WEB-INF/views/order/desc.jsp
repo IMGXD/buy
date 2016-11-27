@@ -77,22 +77,22 @@
     </c:forEach>
 </table>
 <br/>
-<form method="post" action="javascript:alert('别点了，再点就去银行页面了！');" id="form" target="_parent">
-    收货地址：<input type="text" name="address" size="50" value="北京市海淀区金燕龙大厦2楼216室无敌收"/><br/>
+<%--<form method="post" action="javascript:alert('别点了，再点就去银行页面了！');" id="form" target="_parent">--%>
+    <%--收货地址：<input type="text" name="address" size="50" value="北京市海淀区金燕龙大厦2楼216室无敌收"/><br/>--%>
 
-    选择银行：<br/>
-    <input type="radio" name="pd_FrpId" value="ICBC-NET-B2C" checked="checked"/>工商银行
-    <img src="../../bank_img/icbc.bmp" align="middle"/>
-    <input type="radio" name="pd_FrpId" value="BOC-NET-B2C"/>中国银行
-    <img src="../../bank_img/bc.bmp" align="middle"/><br/><br/>
-    <input type="radio" name="pd_FrpId" value="ABC-NET-B2C"/>农业银行
-    <img src="../../bank_img/abc.bmp" align="middle"/>
-    <input type="radio" name="pd_FrpId" value="CCB-NET-B2C"/>建设银行
-    <img src="../../bank_img/ccb.bmp" align="middle"/><br/><br/>
-    <input type="radio" name="pd_FrpId" value="BOCO-NET-B2C"/>交通银行
-    <img src="../../bank_img/bcc.bmp" align="middle"/><br/>
-</form>
-<a id="pay" href="javascript:document.getElementById('form').submit();"></a>
+    <%--选择银行：<br/>--%>
+    <%--<input type="radio" name="pd_FrpId" value="ICBC-NET-B2C" checked="checked"/>工商银行--%>
+    <%--<img src="../../bank_img/icbc.bmp" align="middle"/>--%>
+    <%--<input type="radio" name="pd_FrpId" value="BOC-NET-B2C"/>中国银行--%>
+    <%--<img src="../../bank_img/bc.bmp" align="middle"/><br/><br/>--%>
+    <%--<input type="radio" name="pd_FrpId" value="ABC-NET-B2C"/>农业银行--%>
+    <%--<img src="../../bank_img/abc.bmp" align="middle"/>--%>
+    <%--<input type="radio" name="pd_FrpId" value="CCB-NET-B2C"/>建设银行--%>
+    <%--<img src="../../bank_img/ccb.bmp" align="middle"/><br/><br/>--%>
+    <%--<input type="radio" name="pd_FrpId" value="BOCO-NET-B2C"/>交通银行--%>
+    <%--<img src="../../bank_img/bcc.bmp" align="middle"/><br/>--%>
+<%--</form>--%>
+<a id="pay" href="<c:url value='/orders/pay?oid=${order.oid}'/>"></a>
 
 </body>
 </html>

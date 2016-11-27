@@ -85,6 +85,13 @@ public class OrdersController {
         return "order/desc";
     }
 
+    /**
+     * 我的订单
+     *
+     * @param session
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("/myOrders")
     public ModelAndView myOrders(HttpSession session) throws Exception {
         //  从session得到当前用户，再获取其uid
@@ -98,6 +105,69 @@ public class OrdersController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("orderList", ordersCustomList);
         modelAndView.setViewName("order/list");
+
+        return modelAndView;
+    }
+
+    /**
+     * 加载单个订单
+     *
+     * @param oid
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/loadOrder")
+    public ModelAndView loadOrder(String oid) throws Exception {
+
+        OrdersCustom ordersCustom = ordersService.loadOrder(oid);
+
+        //  订单列表保存到request域中，之后转发到order/list
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("order", ordersCustom);
+        modelAndView.setViewName("order/desc");
+
+        return modelAndView;
+    }
+
+    /**
+     * 支付
+     *
+     * @param oid
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/pay")
+    public ModelAndView pay(String oid) throws Exception {
+
+        ordersService.pay(oid);
+
+        //  订单列表保存到request域中，之后转发到order/list
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("message", "恭喜，支付成功！");
+        modelAndView.setViewName("success");
+
+        return modelAndView;
+    }
+
+    /**
+     * 确认收货
+     *
+     * @param oid
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/confirm")
+    public ModelAndView confirm(String oid) throws Exception {
+
+        ordersService.confirm(oid);
+
+        //  订单列表保存到request域中，之后转发到success
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("message", "恭喜，交易成功！");
+        modelAndView.setViewName("success");
 
         return modelAndView;
     }

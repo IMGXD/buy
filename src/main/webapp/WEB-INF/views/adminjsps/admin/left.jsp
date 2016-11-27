@@ -17,7 +17,7 @@
     <script type="text/javascript" src="<c:url value='/menu/mymenu.js'/>"></script>
     <link rel="stylesheet" href="<c:url value='/menu/mymenu.css'/>" type="text/css" media="all">
     <script language="javascript">
-        var bar1 = new Q6MenuBar("bar1", "ITCAST网络图书商城");
+        var bar1 = new Q6MenuBar("bar1", "图书商城");
         function load() {
             bar1.colorStyle = 2;
             bar1.config.imgDir = "<c:url value='/menu/img/'/>";
@@ -28,11 +28,11 @@
             bar1.add("图书管理", "查看图书", "<c:url value='/adminBook/findBookList'/>", "body");
             bar1.add("图书管理", "添加图书", "<c:url value='/adminBook/addPre'/>", "body");
 
-            bar1.add("订单管理", "所有订单", "<c:url value=''/>", "body");
-            bar1.add("订单管理", "未付款订单", "<c:url value=''/>", "body");
-            bar1.add("订单管理", "已付款订单", "<c:url value=''/>", "body");
-            bar1.add("订单管理", "未收货订单", "<c:url value=''/>", "body");
-            bar1.add("订单管理", "已完成订单", "<c:url value=''/>", "body");
+            bar1.add("订单管理", "所有订单", "<c:url value='/adminOrders/findOrderList'/>", "body");
+            bar1.add("订单管理", "未付款订单", "<c:url value='/adminOrders/findOrderListByState?state=1'/>", "body");
+            bar1.add("订单管理", "已付款订单", "<c:url value='/adminOrders/findOrderListByState?state=2'/>", "body");
+            bar1.add("订单管理", "未收货订单", "<c:url value='/adminOrders/findOrderListByState?state=3'/>", "body");
+            bar1.add("订单管理", "已完成订单", "<c:url value='/adminOrders/findOrderListByState?state=4'/>", "body");
 
             var d = document.getElementById("menu");
             d.innerHTML = bar1.toString();

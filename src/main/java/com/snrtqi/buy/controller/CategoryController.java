@@ -32,8 +32,8 @@ public class CategoryController {
     public Map<String, String> getBookTypes() throws Exception{
         Map<String, String> bookTypes = new HashMap<String, String>();
 
-        bookTypes.put("bookCustom.bname", "图书名");
-        bookTypes.put("bookCustom.author", "作者");
+        bookTypes.put("bname", "图书名");
+        bookTypes.put("author", "作者");
 
         return bookTypes;
 

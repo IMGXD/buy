@@ -34,13 +34,26 @@
             margin: 10px;
         }
     </style>
+    <script type="text/javascript" charset="utf-8">
+        function remove() {
+            document.bookForm.action = "/adminBook/delete";
+            document.bookForm.submit();
+        }
+
+        function edit() {
+            document.bookForm.action = "/adminBook/edit";
+            document.bookForm.submit();
+        }
+    </script>
 </head>
 
 <body>
 <div>
     <img src="<c:url value='/${book.image}'/>" border="0"/>
 </div>
-<form style="margin:20px;" id="form" action="javascript:alert('操作成功！');" method="post">
+<form style="margin:20px;" id="form" action="/adminBook/delete" method="post" name="bookForm">
+    <input type="hidden" name="bid" value="${book.bid}"/>
+    <input type="hidden" name="image" value="${book.image}"/>
     图书名称：<input type="text" name="bname" value="${book.bname}"/><br/>
     图书单价：<input type="text" name="price" value="${book.price}"/>元<br/>
     图书作者：<input type="text" name="author" value="${book.author}"/><br/>
@@ -51,8 +64,8 @@
         </option>
     </c:forEach>
 </select><br/>
-    <input type="submit" name="method" value="删除" onclick="return confirm('是否真要删除该图书？');"/>
-    <input type="submit" name="method" value="修改"/>
+    <input type="submit" value="删除" onclick="remove()"/>
+    <input type="submit" value="编辑" onclick="edit()"/>
 </form>
 </body>
 </html>

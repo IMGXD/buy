@@ -604,6 +604,66 @@ public class BookExample {
             addCriterion("cid not between", value1, value2, "cid");
             return (Criteria) this;
         }
+
+        public Criteria andDelIsNull() {
+            addCriterion("del is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelIsNotNull() {
+            addCriterion("del is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelEqualTo(Boolean value) {
+            addCriterion("del =", value, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelNotEqualTo(Boolean value) {
+            addCriterion("del <>", value, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelGreaterThan(Boolean value) {
+            addCriterion("del >", value, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelGreaterThanOrEqualTo(Boolean value) {
+            addCriterion("del >=", value, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelLessThan(Boolean value) {
+            addCriterion("del <", value, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelLessThanOrEqualTo(Boolean value) {
+            addCriterion("del <=", value, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelIn(List<Boolean> values) {
+            addCriterion("del in", values, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelNotIn(List<Boolean> values) {
+            addCriterion("del not in", values, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelBetween(Boolean value1, Boolean value2) {
+            addCriterion("del between", value1, value2, "del");
+            return (Criteria) this;
+        }
+
+        public Criteria andDelNotBetween(Boolean value1, Boolean value2) {
+            addCriterion("del not between", value1, value2, "del");
+            return (Criteria) this;
+        }
     }
 
     /**

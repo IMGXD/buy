@@ -64,7 +64,7 @@
         <!--用百分号表示生成所有表,可以直接省去一个一个写 <table tableName="%" /> -->
         <!--<table tableName="user" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>-->
-        <table tableName="%"/>
+        <table tableName="book"/>
 
         <!-- 有些表的字段需要指定java类型
          <table schema="" tableName="">
