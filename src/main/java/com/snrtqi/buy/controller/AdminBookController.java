@@ -106,6 +106,15 @@ public class AdminBookController {
         return modelAndView;
     }
 
+    /**
+     * 添加图书
+     *
+     * @param bookQueryVo
+     * @param book_pic
+     * @param bname
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("/addBook")
     public String addBook(BookQueryVo bookQueryVo,
                           MultipartFile book_pic,
@@ -145,7 +154,7 @@ public class AdminBookController {
     }
 
     /**
-     * 删除图书
+     * 删除图书提交
      *
      * @param bid
      * @return
@@ -160,7 +169,7 @@ public class AdminBookController {
     }
 
     /**
-     * 编辑图书
+     * 编辑图书提交
      *
      * @param bookCustom
      * @return
