@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43cc9513-ee0a-4ce8-b4af-bd5c4b87896e" name="Default" comment="用户注册、登录功能，分类功能，图书功能、购物车功能&#10;管理员：分类的增加、删除、修改、查找，图书的查找全部图书、加载&#10;我的订单">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/properties/CustomValidationMessages.properties" afterPath="$PROJECT_DIR$/src/main/resources/properties/CustomValidationMessages.properties" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1526,7 +1526,7 @@
       <workItem from="1479998068159" duration="3293000" />
       <workItem from="1480034277466" duration="9683000" />
       <workItem from="1480170200683" duration="7076000" />
-      <workItem from="1480220975610" duration="2275000" />
+      <workItem from="1480220975610" duration="2371000" />
     </task>
     <task id="LOCAL-00001" summary="原型导入">
       <created>1479047058053</created>
@@ -1570,11 +1570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480225134661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="用户注册、登录功能，分类功能，图书功能、购物车功能&#10;管理员：分类的增加、删除、修改、查找，图书的查找全部图书、加载&#10;我的订单">
+      <created>1480225561536</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1480225561536</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152472000" />
+    <option name="totallyTimeSpent" value="152568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
