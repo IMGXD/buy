@@ -2,321 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43cc9513-ee0a-4ce8-b4af-bd5c4b87896e" name="Default" comment="用户注册、登录功能，分类功能，图书功能、购物车功能&#10;管理员：分类的增加、删除、修改、查找，图书的查找全部图书、加载&#10;我的订单">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/AdminBookController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/AdminCategoryController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/AdminController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/BookController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/CategoryController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/HomeController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/OrdersController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/ShoppingCarController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/converter/CustomDataConverter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/validation/ValidGroup1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/controller/validation/ValidGroup2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/AddBookException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/AddCategoryException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/AdminLoginException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/CustomException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/CustomExceptionResolver.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/DeleteCategoryException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/LoginException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/RegistException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/exception/UpdateCategoryException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/interceptor/LoginInterceptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/AdminMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/AdminMapperCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/BookMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/BookMapperCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/CategoryMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/CategoryMapperCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/OrderitemMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/OrderitemMapperCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/OrdersMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/OrdersMapperCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/UserMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/mapper/UserMapperCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/Admin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/AdminCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/AdminExample$Criteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/AdminExample$Criterion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/AdminExample$GeneratedCriteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/AdminExample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/AdminQueryVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/Book.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/BookCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/BookExample$Criteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/BookExample$Criterion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/BookExample$GeneratedCriteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/BookExample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/BookQueryVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/Category.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/CategoryCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/CategoryExample$Criteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/CategoryExample$Criterion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/CategoryExample$GeneratedCriteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/CategoryExample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/CategoryQueryVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/Orderitem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrderitemCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrderitemExample$Criteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrderitemExample$Criterion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrderitemExample$GeneratedCriteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrderitemExample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/Orders.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrdersCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrdersExample$Criteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrdersExample$Criterion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrdersExample$GeneratedCriteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/OrdersExample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/ShoppingCar.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/ShoppingCarCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/ShoppingCarItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/ShoppingCarItemCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/UserCustom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/UserExample$Criteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/UserExample$Criterion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/UserExample$GeneratedCriteria.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/UserExample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/pojo/UserQueryVo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/AdminService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/BookService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/CategoryService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/OrdersService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/UserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/impl/AdminServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/impl/BookServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/impl/CategoryServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/impl/OrdersServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/service/impl/UserServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/com/snrtqi/buy/util/CommonUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/aspectjrt-1.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/aspectjweaver-1.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/c3p0-0.9.5.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/commons-fileupload-1.2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/commons-io-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/commons-lang-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/commons-logging-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/jstl-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/mchange-commons-java-0.2.10.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/mybatis-3.3.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/mybatis-spring-1.2.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/mysql-connector-java-5.1.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/servlet-api-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-aop-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-beans-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-context-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-context-support-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-core-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-expression-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-jdbc-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-oxm-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-test-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-tx-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-web-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/lib/spring-webmvc-3.2.1.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/abc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/bc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/bcc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/beijingnongshang.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/bh.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/bj.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/ccb.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/cib.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/cmb.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/cmbc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/dy.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/gf.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/guangda.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/hx.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/icbc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/nanjing.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/ningbo.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/pingan.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/post.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/sfz.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/sh.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/shpd.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/zheshang.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/bank_img/zx.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/images/all.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/images/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/images/welcome.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/menu/img/jia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/menu/img/jian.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/abc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/bc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/bcc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/beijingnongshang.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/bh.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/bj.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/ccb.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/cib.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/cmb.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/cmbc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/dy.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/gf.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/guangda.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/hx.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/icbc.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/nanjing.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/ningbo.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/pingan.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/post.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/sfz.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/sh.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/shpd.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/zheshang.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/bank_img/zx.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/all.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/welcome.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/menu/img/jia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/menu/img/jian.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/55535ef1-14c2-48ad-b2d3-388ca6824012.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buy.eml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buy.userlibraries" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/generatorConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/AdminMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/AdminMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/BookMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/BookMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/CategoryMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/CategoryMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/OrderitemMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/OrderitemMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/OrdersMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/OrdersMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/UserMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mapper/UserMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/mybatis/sqlMapConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/properties/CustomValidationMessages.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/properties/db.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/spring/applicationContext-dao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/spring/applicationContext-service.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/spring/applicationContext-transaction.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/classes/spring/springmvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/body.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/book/add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/book/desc.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/book/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/category/add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/category/del.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/category/edit.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/category/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/left.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/main.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/order/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/admin/top.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/adminjsps/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/body.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/book/desc.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/book/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/cart/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/error.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/left.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/main.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/message.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/order/desc.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/order/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/success.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/top.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/user/findUser.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/user/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/views/user/regist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/images/占位符.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/menu/mymenu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/menu/mymenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/statics/css/占位符.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/statics/js/jQuery-core/占位符.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/buy_war_exploded2/statics/js/plugins/占位符.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/AdminBookController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/AdminCategoryController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/BookController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/CategoryController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/HomeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/OrdersController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/controller/ShoppingCarController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/exception/AddBookException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/exception/AddCategoryException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/exception/AdminLoginException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/exception/DeleteCategoryException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/exception/LoginException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/exception/RegistException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/exception/UpdateCategoryException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/mapper/AdminMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/mapper/AdminMapperCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/mapper/BookMapperCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/mapper/CategoryMapperCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/mapper/OrderitemMapperCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/mapper/OrdersMapperCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/mapper/UserMapperCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/Admin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/AdminCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/AdminExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/AdminQueryVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/BookQueryVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/CategoryQueryVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/ShoppingCar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/ShoppingCarCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/ShoppingCarItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/pojo/ShoppingCarItemCustom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/AdminService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/BookService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/CategoryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/OrdersService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/impl/AdminServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/impl/BookServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/impl/CategoryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/service/impl/OrdersServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/snrtqi/buy/util/CommonUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AdminMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AdminMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BookMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderitemMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrdersMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapperCustom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/body.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/book/add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/book/desc.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/book/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/category/add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/category/del.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/category/edit.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/category/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/left.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/main.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/order/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/admin/top.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminjsps/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/desc.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/left.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/message.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/desc.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order/list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/top.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/regist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/menu/mymenu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/menu/mymenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -455,7 +142,7 @@
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -1123,13 +810,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15074496" />
     <property name="project.structure.side.proportion" value="0.31578946" />
     <property name="SearchEverywhereHistoryKey" value=";&#9;null&#9;null" />
-    <property name="last_opened_file_path" value="F:/develop/upload/book_img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1839,7 +1526,7 @@
       <workItem from="1479998068159" duration="3293000" />
       <workItem from="1480034277466" duration="9683000" />
       <workItem from="1480170200683" duration="7076000" />
-      <workItem from="1480220975610" duration="1839000" />
+      <workItem from="1480220975610" duration="2275000" />
     </task>
     <task id="LOCAL-00001" summary="原型导入">
       <created>1479047058053</created>
@@ -1876,11 +1563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480222447233</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="用户注册、登录功能，分类功能，图书功能、购物车功能&#10;管理员：分类的增加、删除、修改、查找，图书的查找全部图书、加载&#10;我的订单">
+      <created>1480225134661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1480225134661</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152036000" />
+    <option name="totallyTimeSpent" value="152472000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
