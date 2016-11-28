@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="43cc9513-ee0a-4ce8-b4af-bd5c4b87896e" name="Default" comment="图书增加、修改增加校验">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -766,7 +765,7 @@
     <property name="project.structure.proportion" value="0.15074496" />
     <property name="project.structure.side.proportion" value="0.31578946" />
     <property name="SearchEverywhereHistoryKey" value=";&#9;null&#9;null" />
-    <property name="last_opened_file_path" value="D:/repository/learngit" />
+    <property name="last_opened_file_path" value="D:/repository" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1482,7 +1481,7 @@
       <workItem from="1480220975610" duration="3149000" />
       <workItem from="1480226433763" duration="29565000" />
       <workItem from="1480296632711" duration="6839000" />
-      <workItem from="1480309479155" duration="6836000" />
+      <workItem from="1480309479155" duration="6877000" />
     </task>
     <task id="LOCAL-00001" summary="原型导入">
       <created>1479047058053</created>
@@ -1575,11 +1574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480320364310</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="图书增加、修改增加校验">
+      <created>1480321307945</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1480321307945</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196586000" />
+    <option name="totallyTimeSpent" value="196627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
