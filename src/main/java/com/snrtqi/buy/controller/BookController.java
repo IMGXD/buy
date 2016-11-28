@@ -67,6 +67,8 @@ public class BookController {
     }
 
     /**
+     * 加载图书
+     *
      * @param bid
      * @return
      * @throws Exception

@@ -54,9 +54,13 @@
 <form style="margin:20px;" id="form" action="/adminBook/delete" method="post" name="bookForm">
     <input type="hidden" name="bid" value="${book.bid}"/>
     <input type="hidden" name="image" value="${book.image}"/>
-    图书名称：<input type="text" name="bname" value="${book.bname}"/><br/>
+    图书名称：<input type="text" name="bname" value="${book.bname}"/>
+    <p style="color: red; font-weight: 900">${errors.bname}</p>
+    <br/>
     图书单价：<input type="text" name="price" value="${book.price}"/>元<br/>
-    图书作者：<input type="text" name="author" value="${book.author}"/><br/>
+    图书作者：<input type="text" name="author" value="${book.author}"/>
+    <p style="color: red; font-weight: 900">${errors.author}</p>
+    <br/>
     图书分类：<select style="width: 150px; height: 20px;" name="cid">
     <c:forEach items="${categoryList}" var="category">
         <option value="${category.cid}"

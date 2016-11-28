@@ -8,13 +8,16 @@ import com.snrtqi.buy.service.CategoryService;
 import com.snrtqi.buy.util.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 管理员图书管理Controller
@@ -118,7 +121,37 @@ public class AdminBookController {
     @RequestMapping("/addBook")
     public String addBook(BookQueryVo bookQueryVo,
                           MultipartFile book_pic,
-                          @ModelAttribute("bookCustom.bname") String bname) throws Exception {
+                          @ModelAttribute("bookCustom.bname") String bname,
+                          Model model) throws Exception {
+
+        /*
+            输入校验（暂未用springmvc的校验）
+         */
+        //  定义Map
+        Map<String, String> errors = new HashMap<String, String>();
+
+        //  校验图书名
+        if (bname == null || bname.trim().isEmpty()) {
+            errors.put("bname", "图书名不能为空！");
+        } else if (bname.length() < 3 || bname.length() > 10) {
+            errors.put("bname", "图书名长度必须在3-10之间！");
+        }
+
+        //  校验作者
+        String author = bookQueryVo.getBookCustom().getAuthor();
+        if (author == null || author.trim().isEmpty()) {
+            errors.put("author", "作者不能为空！");
+        } else if (author.length() < 3 || author.length() > 10) {
+            errors.put("author", "作者长度必须在3-10之间！");
+        }
+
+        //  判断是否存在错误信息
+        if (errors.size() > 0) {
+            model.addAttribute("errors", errors);
+            model.addAttribute("book", bookQueryVo.getBookCustom());
+            return "adminjsps/admin/book/add";
+        }
+
         //  原始名称
         String originalFilename = book_pic.getOriginalFilename();
 
@@ -176,7 +209,37 @@ public class AdminBookController {
      * @throws Exception
      */
     @RequestMapping("/edit")
-    public String edit(BookCustom bookCustom) throws Exception {
+    public String edit(BookCustom bookCustom, Model model) throws Exception {
+
+        /*
+            输入校验（暂未用springmvc的校验）
+         */
+        //  定义Map
+        Map<String, String> errors = new HashMap<String, String>();
+
+        //  校验图书名
+        String bname = bookCustom.getBname();
+        if (bname == null || bname.trim().isEmpty()) {
+            errors.put("bname", "图书名不能为空！");
+        } else if (bname.length() < 3 || bname.length() > 10) {
+            errors.put("bname", "图书名长度必须在3-10之间！");
+        }
+
+        //  校验作者
+        String author = bookCustom.getAuthor();
+        if (author == null || author.trim().isEmpty()) {
+            errors.put("author", "作者不能为空！");
+        } else if (author.length() < 3 || author.length() > 10) {
+            errors.put("author", "作者长度必须在3-10之间！");
+        }
+
+        //  判断是否存在错误信息
+        if (errors.size() > 0) {
+            model.addAttribute("errors", errors);
+            model.addAttribute("book", bookCustom);
+            return "adminjsps/admin/book/desc";
+        }
+
         //  调用service方法加载图书
         bookService.updateBook(bookCustom);
 

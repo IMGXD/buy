@@ -26,10 +26,14 @@
 <p style="font-weight: 900; color: red">${message }</p>
 
 <form action="/adminBook/addBook" method="post" enctype="multipart/form-data">
-    图书名称：<input style="width: 150px; height: 20px;" type="text" name="bookCustom.bname"/><br/>
-    图书图片：<input style="width: 223px; height: 20px;" type="file" name="book_pic"/><br/>
-    图书单价：<input style="width: 150px; height: 20px;" type="text" name="bookCustom.price"/><br/>
-    图书作者：<input style="width: 150px; height: 20px;" type="text" name="bookCustom.author"/><br/>
+    图书名称：<input style="width: 150px; height: 20px;" type="text" name="bookCustom.bname" value="${book.bname}"/>
+    <p style="color: red; font-weight: 900">${errors.bname}</p>
+    <br/>
+    图书图片：<input style="width: 223px; height: 20px;" type="file" name="book_pic"  value="${book.image}"/><br/>
+    图书单价：<input style="width: 150px; height: 20px;" type="text" name="bookCustom.price"  value="${book.price}"/><br/>
+    图书作者：<input style="width: 150px; height: 20px;" type="text" name="bookCustom.author"  value="${book.author}"/>
+    <p style="color: red; font-weight: 900">${errors.author}</p>
+    <br/>
     图书分类：<select style="width: 150px; height: 20px;" name="bookCustom.cid">
     <c:forEach items="${categoryList}" var="category">
         <option value="${category.cid}">${category.cname}</option>
