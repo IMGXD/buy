@@ -45,7 +45,7 @@ public class BookController {
     }
 
     /**
-     * 根据分类查询分类列表
+     * 根据分类查询图书列表
      *
      * @param cid
      * @return
