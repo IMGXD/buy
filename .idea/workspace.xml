@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43cc9513-ee0a-4ce8-b4af-bd5c4b87896e" name="Default" comment="分类和图书的单元测试">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/snrtqi/buy/service/impl/BookServiceImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/snrtqi/buy/service/impl/CategoryServiceImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buy.eml" afterPath="$PROJECT_DIR$/buy.eml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buy.iml" afterPath="$PROJECT_DIR$/buy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buy.userlibraries" afterPath="$PROJECT_DIR$/buy.userlibraries" />
-    </list>
+    <list default="true" id="43cc9513-ee0a-4ce8-b4af-bd5c4b87896e" name="Default" comment="分类和图书的单元测试" />
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1634,7 +1624,7 @@
       <workItem from="1480924859832" duration="2743000" />
       <workItem from="1481602854467" duration="5142000" />
       <workItem from="1481619716572" duration="797000" />
-      <workItem from="1481692107646" duration="143000" />
+      <workItem from="1481692107646" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="原型导入">
       <created>1479047058053</created>
@@ -1748,11 +1738,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481608258756</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="分类和图书的单元测试">
+      <created>1481692395430</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1481692395430</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214653000" />
+    <option name="totallyTimeSpent" value="214750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
