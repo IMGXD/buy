@@ -37,5 +37,8 @@
 		<level name="Maven: org.mybatis:mybatis-spring:1.2.3" value="project"/>
 		<level name="Maven: mysql:mysql-connector-java:5.1.6" value="project"/>
 		<level name="Maven: jstl:jstl:1.2" value="project"/>
+		<level name="Maven: commons-fileupload:commons-fileupload:1.2.2" value="project"/>
+		<level name="Maven: commons-io:commons-io:2.4" value="project"/>
+		<level name="Maven: javax.inject:javax.inject:1" value="project"/>
 	</levels>
 </component>

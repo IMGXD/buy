@@ -9,6 +9,12 @@
   <library name="Maven: com.mchange:mchange-commons-java:0.2.10">
     <archive path="C:/Users/Gumo/.m2/repository/com/mchange/mchange-commons-java/0.2.10/mchange-commons-java-0.2.10.jar" />
   </library>
+  <library name="Maven: commons-fileupload:commons-fileupload:1.2.2">
+    <archive path="C:/Users/Gumo/.m2/repository/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar" />
+  </library>
+  <library name="Maven: commons-io:commons-io:2.4">
+    <archive path="C:/Users/Gumo/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
+  </library>
   <library name="Maven: commons-lang:commons-lang:2.5">
     <archive path="C:/Users/Gumo/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar" />
   </library>
@@ -80,6 +86,9 @@
   </library>
   <library name="Maven: org.springframework:spring-webmvc:3.2.1.RELEASE">
     <archive path="C:/Users/Gumo/.m2/repository/org/springframework/spring-webmvc/3.2.1.RELEASE/spring-webmvc-3.2.1.RELEASE.jar" />
+  </library>
+  <library name="Maven: javax.inject:javax.inject:1">
+    <archive path="C:/Users/Gumo/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar" />
   </library>
 </eclipse-userlibraries>
 
